@@ -1,0 +1,79 @@
+$header-colour:#441D75;
+$header-font: halyard-text, sans-serif;
+$body-font: halyard-text, sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,900,700,500);
+
+body .orientation-container{
+    
+    color:#fff; 
+    font-family: $body-font;
+    margin:0; 
+    //will-change: background;
+}
+
+// For the Welcome Class of 2027
+.welcome-heading-container{
+    height:100vh;
+}
+
+// For the text on the purple screen
+.welcome-message-container{
+    height:100vh;
+}
+
+// APPLY WHEN SCREEN IS SMALLER FONT GETS SMALLER
+.orientation-container h2{
+    font-size:4.5em; 
+    font-weight:900; 
+    margin-left: 1.5em;
+    margin-right: 5em;
+    margin-top: 0em;
+    margin-bottom:0em;
+    span{
+        background-color: #BDB7E9;
+    }
+    
+}
+
+.orientation-container p{
+    // THIS FONT IS SO UGLY
+    width:auto; 
+    float:center; 
+    font-size:1.3em; 
+    margin-left: 5.4em;
+    margin-right:1em;
+    font-weight:500;
+    margin-top:1em;
+    line-height: 1.3em;
+    order:-1;
+    background-color: #BDB7E9;
+    
+}
+
+.clear{clear:both;}
+
+.welcome-flexboxes{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    flex-direction: row-reverse;
+}
+
+.welcome-image-container{
+    display: flex;
+    flex-basis: 33%;
+    flex-direction: column;
+    justify-content: flex-start;
+    //width:auto;
+    margin-bottom: 0.1em;
+    margin-right:6em;
+    margin-top:-6.8em;
+    order:1;
+    object-fit: contain;
+    img{
+        width:95%;
+        height:auto;
+        margin-bottom: 1em;
+        
+    }
+  }

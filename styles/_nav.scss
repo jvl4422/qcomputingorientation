@@ -1,0 +1,107 @@
+
+
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem 0.25rem;
+    width: 100%;
+    
+}
+
+
+.name-logo-navbar{
+    width: 300px;
+    @media only screen and (max-width: 600px) {
+        width: 100px;
+        position: absolute;
+        top:3vh;
+        left:5vw;
+      }
+    
+}
+
+.nav-toggle {
+    position: fixed;
+    top: 2vh;
+    right: 3vw;
+    display: none;
+    border: none;
+    background: none;
+    z-index: 5;
+  
+    @media only screen and (max-width: 1100px) {
+      display: flex;
+    }
+  }
+
+  .nav-options{
+    display:flex;
+    font-weight: 10000;
+    letter-spacing: 0px;
+    column-gap: 5.5rem;
+    font-size: 1rem;
+    border: none !important;
+
+    @media only screen and (max-width: 1600px) {
+        column-gap: 3.5rem;
+      }
+      @media only screen and (max-width: 1500px) {
+        column-gap: 3.5rem;
+      }
+      @media only screen and (max-width: 1300px) {
+        column-gap: 4.5rem;
+      }
+      @media only screen and (max-width: 1100px) {
+        flex-direction: column;
+        position: fixed;
+        row-gap: 4rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        justify-content: flex-start;
+        padding-top: 5rem;
+        z-index: 4;
+        overflow-y: scroll;
+        padding-bottom: 3rem;
+      }
+      @media only screen and (max-width: 850px) {
+      }
+  }
+
+  .nav-option{
+    // Obv change colour if necessary
+    text-decoration: none;
+    color:black;
+    font-family: halyard-text, sans-serif;
+    // Might cause problems
+    padding:0.5rem;
+    
+  }
+  .nav-option:hover{
+    // Obv change colour appropriately
+    color:#867eeb;
+  }
+
+  .nav-mob-tabs-off {
+    @media only screen and (max-width: 1100px) {
+      // animation: slideOut 0.3;
+      transition: transform linear 0.4s;
+      transform: translateX(-100%);
+    }
+  }
+  .nav-qcomp-logo {
+    display: none;
+    @media only screen and (max-width: 1100px) {
+      display: block;
+    }
+    img {
+      @media only screen and (max-width: 1100px) {
+        height: 170px;
+      }
+      @media only screen and (max-width: 600px) {
+        height: 120px;
+      }
+    }
+  }

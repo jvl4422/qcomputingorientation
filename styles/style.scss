@@ -1,0 +1,39 @@
+// style.scss
+// Everything will get added here with an import tag
+// This is the main one
+
+$halyard-font : "halyard-text", sans-serif;
+@use "_nav.scss";
+@use "_page.scss";
+@use "_flexboxalignment.scss";
+@use "_margins.scss";
+@use "_landing.scss";
+@use "_tc.scss";
+@use "_sponsors.scss";
+@use "_orientation.scss";
+@use "_jarallax.scss";
+@use "_footer.scss";
+
+$qcomp-light-purple : #867eeb;
+
+// If you want colour ideas I like to look through the visual studio files
+
+// Pretty sure this is never used
+.body{
+    font-family : halyard-text, sans-serif;
+    //font-style: normal;
+    //font-weight: 400;
+    
+}
+
+body{
+    display:block;
+    margin:0px;
+    
+}
+
+// Since this is basically used everywhere
+.swag-break{
+    display: block;
+    height: 100px;
+}

@@ -1,0 +1,113 @@
+// footer styling
+
+.footer-container {
+    margin-bottom: 1rem;
+    display:grid;
+  }
+  .footer-content {
+    // Not black that is not a comp sci colour
+    border-top: 1px solid black;
+    grid-template-columns: 1fr 1fr;
+    display:grid;
+    justify-items: center;
+    padding-top:3rem;
+    a {
+            text-decoration: none;
+        color:black;
+        font-family: halyard-text, sans-serif;
+        // Might cause problems
+        padding:0.5rem; 
+        }
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  .footer-links {
+    width: 100%;
+    display: grid;
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr !important;
+      width: 100%;
+    }
+  }
+  .footer-nav-links {
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .footer-nav-links,
+  .footer-page-socials {
+    row-gap: 0.2rem;
+    justify-content: flex-start;
+    @media only screen and (max-width: 900px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      column-gap: 2.5rem;
+      row-gap: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    a {
+      color: black;
+      text-decoration: none;
+      @media only screen and (max-width: 900px) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  
+
+  .p-5 {
+    padding: 3rem!important
+}
+
+.grid-cols-2 {
+    grid-template-columns: auto auto;
+}
+
+.footer-option{
+
+    text-decoration: none;
+    color:black;
+    font-family: halyard-text, sans-serif;
+    // Might cause problems
+    padding:0.5rem;    
+}
+
+/*------------Banner stuff *-----------------*/
+
+.footer-banner{
+  margin-top: 1rem;
+  display:grid;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.author-container{
+  // Change colour?
+  background-color: white;
+  // Is this necessary
+  padding-bottom: 15px;
+  margin: auto;
+  justify-items:center;
+  p {
+    font-family: monospace;
+    color: black;
+    font-size:1.5em;
+    float:left;
+
+  }
+}
+
+.author-content{
+  text-align: center;
+  justify-items: center;
+}
+
+.footer-image{
+  height:10vw;
+  text-align: center;
+}
