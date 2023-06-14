@@ -398,7 +398,6 @@
     line-height: 45px;
   }
 }
-
 .little-break {
   display: block;
   height: 0.01em;
@@ -454,7 +453,7 @@
     font-size: 4rem;
   }
 }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-width: 500px) {
   .typewriter {
     font-size: 3rem;
   }
@@ -637,11 +636,27 @@ body .orientation-container {
 .orientation-container h2 span {
   background-color: #BDB7E9;
 }
+@media only screen and (max-width: 800px) {
+  .orientation-container h2 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .orientation-container h2 {
+    font-size: 2.2em;
+    margin-right: 2em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .orientation-container h2 {
+    margin-left: 1em;
+    margin-right: -1em;
+  }
+}
 
 .orientation-container p {
   width: auto;
   float: center;
-  font-size: 1.3em;
   margin-left: 5.4em;
   margin-right: 1em;
   font-weight: 500;
@@ -649,6 +664,25 @@ body .orientation-container {
   line-height: 1.3em;
   order: -1;
   background-color: #BDB7E9;
+}
+@media only screen and (max-width: 500px) {
+  .orientation-container p {
+    margin-left: 2em;
+  }
+}
+
+.welcome-messaging {
+  font-size: 1.4em;
+}
+@media only screen and (max-width: 800px) {
+  .welcome-messaging {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcome-messaging {
+    font-size: 1em;
+  }
 }
 
 .clear {
@@ -659,6 +693,13 @@ body .orientation-container {
   display: grid;
   grid-template-columns: 3fr 2fr;
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 500px) {
+  .welcome-flexboxes {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: none;
+  }
 }
 
 .welcome-image-container {
@@ -677,6 +718,41 @@ body .orientation-container {
   width: 95%;
   height: auto;
   margin-bottom: 1em;
+}
+@media only screen and (max-width: 800px) {
+  .welcome-image-container {
+    margin-top: 1.19em;
+    margin-right: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcome-image-container {
+    margin-right: 1em;
+    margin-left: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .welcome-image-container img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 0.5em;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .welcome-image-container {
+    margin-right: 1em;
+    margin-left: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 0em;
+  }
+  .welcome-image-container img {
+    width: 65%;
+    height: auto;
+    margin-bottom: 0.5em;
+    justify-content: center;
+  }
 }
 
 .jarallax {
