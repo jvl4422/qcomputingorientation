@@ -2,4 +2,4 @@
 deployment:
     tasks:
     - export DEPLOYPATH=/home/qcomputingorientation/public_html/
-    - /bin/cp -R $DEPLOYPATH
+    - /bin/cp -R home/qcomputing/repositories/qcomputingorientation $DEPLOYPATH
