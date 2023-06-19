@@ -2,4 +2,8 @@
 deployment:
     tasks:
     - export DEPLOYPATH=/home/qcomptuing/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp coming-soon.html $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
