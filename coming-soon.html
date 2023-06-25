@@ -14,31 +14,28 @@
 <body>
     <div class="root">
         <div class="page">
-            <div class="margins-container layout-container">
-                <div class="nav-bar">
-                    <!-- Made a react script just to realize I don't think we can host react-->
-                    <!-- ;( -->
-                    <!--<script src="js/nav.jsx"></script>-->
-                    <div class="nav-name-logo-container row-c-c">
-                        <img src="images/logos/logo-long.svg" alt="Name Logo" class="name-logo-navbar row-c-fs">
-                    </div>
-                    <button class="nav-toggle">
-                        <img src="images/icons/toggle.svg">
-                    </button>
-                    <div class="nav-options row-c-c nav-mob-tabs-off">
-                        <div class="nav-qcomp-logo">
-                            <img src="images/logos/qcomputing-logo.svg">
-                        </div>
-                        <!-- UPDATE THE HREF ACCORDINGLY FOR THE DIFF EXTENSIONS NECESSARY-->
-                        <!-- For some reason the home one is kind of wonky...-->
-                        <!-- They just don't work for now but lets roll with it-->
-                        <a class="nav-option" href="index.html">HOME</a>
-                        <a class="nav-option" href="coming-soon.html">MEET YOUR TC</a>
-                        <a class="nav-option" href="coming-soon.html">REGISTRATION</a>
-                        <a class="nav-option" href="coming-soon.html">SPONSORS</a>
-                        <a class="nav-option" href="coming-soon.html">FAQ</a>
-                    </div>
+            <div class="margins-container layout-container nav-container">
+                <script src="js/nav.js" defer></script>
+                <div class="nav-logo-container">
+                    <img src="./images/logos/logo-long.svg" alt="Computing Orientation Logo" class="nav-logo">
                 </div>
+    
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">
+                    MENU
+                </span></button>
+    
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a class="nav-option" href="index.html">HOME</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">MEET YOUR TC</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">SPONSORS</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">REGISTRATION</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">FAQ</a>
+                </ul>
             </div>
 
             <div class="coming-soon-page">
@@ -92,7 +89,7 @@
                 <div class="footer-banner justify-content-center">
                         <div class="author-container layout-container">
                             <div class="author-content">
-                                <img src="images/icons/author-tag.svg" class="footer-image">
+                                <img src="images/logos/qcomputing-logo.svg" class="footer-image">
                             </div>
                             
                             
