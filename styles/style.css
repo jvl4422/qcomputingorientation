@@ -70,6 +70,9 @@
     top: 6.5vh;
     right: 2.5rem;
   }
+  .nav-option:hover {
+    color: white;
+  }
 }
 .primary-navigation[data-visible=true] {
   transform: translateX(0%);
@@ -95,7 +98,7 @@
 }
 
 .nav-option:hover {
-  color: white;
+  color: #867eeb;
 }
 
 .page {
