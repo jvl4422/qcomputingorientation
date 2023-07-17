@@ -3,7 +3,7 @@
 $qcomp-dark-purple: #867eeb;
 $qcomp-light-purple: #BDB7E9;
 
-.about{
+.about-container{
   display:flex;
   flex-direction: column;
   
@@ -22,9 +22,7 @@ $qcomp-light-purple: #BDB7E9;
   //flex-wrap: wrap;
   // doesn't work lol
   font-family: halyard-text, sans-serif;
-  border: 10px;
-  background-color: #BDB7E9;
-  border-radius: 20px;
+  //background-color: #BDB7E9;
   width: fit-content;
   
     
@@ -40,7 +38,7 @@ $qcomp-light-purple: #BDB7E9;
 .tc-info{
   margin-left: 2%;
   max-width: 90%;
-  width:fit-content;
+  //width:fit-content;
   align-self: center;
   text-align: center;
   margin-bottom: 3%;
@@ -48,11 +46,12 @@ $qcomp-light-purple: #BDB7E9;
   h3{
     margin-bottom: 3%;
     margin-top: -1.2em;
-    background-color: white;
-    color: $qcomp-dark-purple;
+    background-color: $qcomp-dark-purple;
+    color: white;
     font-size: 1.2em;
-    padding: 3% 0 3%;
+    padding: 3% 0% 3%;
     font-weight: 100;
+    width: 12em;
     
   }
   h4{
@@ -76,18 +75,20 @@ $qcomp-light-purple: #BDB7E9;
   
 }
 .connections-container{
-  width: 25%;
+  width: 50%;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   align-self: center;
   height: 20%;
   margin-bottom:4%;
   img{
     height: 2em;
     width:auto;
+    margin-left: 2%;
+    margin-right: 2%;
     
   }
 }
