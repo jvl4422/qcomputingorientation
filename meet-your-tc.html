@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- TODO: I think all margin classes can be the same-->
+<html lang="en" style="overflow: scroll;">
+<head>
+    <!-- Stuff that will appear on the overview on the google page. -->
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- This does not work so remove at some point -->
+    <link rel="shortcut icon" href="images/logos/qcomputing-logo.svg"/>
+    <title>Queen's University Computing Orientation</title>
+    <meta property="og:title" content="Queen's University Computing Orientation"/>
+    <meta name="description" property="og:description" content="Hello World! Welcome Class of 2027! We are so excited to have you here for the 20th edition of Computing Orientation!"/>
+    <meta property="og:url" content="http://qcomputingorientation.ca/"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <div id="root">
+        <div class="page">
+            <!-- Nav bar container -->
+            <div class="margins-container layout-container nav-container">
+                <script src="js/nav.js" defer></script>
+                <div class="nav-logo-container">
+                    <img src="./images/logos/logo-long.svg" alt="Computing Orientation Logo" class="nav-logo">
+                </div>
+    
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">
+                    MENU
+                </span></button>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active">
+                        <a class="nav-option" href="index.html">HOME</a>
+                    <li>
+                        <a class="nav-option" href="meet-your-tc.html">MEET YOUR TC</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">SPONSORS</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">REGISTRATION</a>
+                    <li>
+                        <a class="nav-option" href="coming-soon.html">FAQ</a>
+                </ul>
+            <!-- Replace with applicable links -->
+            </div>
+
+            <div class="margins-container layout-container">
+                <div class="about-container">
+                    <!-- If we wanted to put a header on what are TC it would go here-->
+                    <div class="tc-cards-container">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/jasmine.jpg">
+                            <div class="tc-info">
+                                <h3>Orientation Chair</h3>
+                                <a href="https://www.linkedin.com/in/jasmine-van-leeuwen-5b0aa91b9/">
+                                    Jasmine van Leeuwen
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Connecticut, USA
+                                    </p>
+                                    <img src="images/icons/usa.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:orientation@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container">
+                            <img src="images/tc/in-action/jasmine-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Second TC-->
+                    <div class="tc-cards-container grid-reverse light-purple">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/akash.jpg">
+                            <div class="tc-info">
+                                <h3>Logistics Chair</h3>
+                                <a href="https://www.linkedin.com/in/akash-singh-1795a4185/">
+                                    Akash Singh
+                                </a>
+                                <h5>He/Him</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        New Delhi, India
+                                    </p>
+                                    <img src="images/icons/india.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:logistics_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container order-reverse">
+                            <img src="images/tc/in-action/akash-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Third tc -->
+                    <div class="tc-cards-container">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/kaan.jpg">
+                            <div class="tc-info">
+                                <h3>Logistics Chair</h3>
+                                <a>
+                                    Kaan Sümer
+                                </a>
+                                <h5>Any pronouns</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Istanbul, Turkey
+                                    </p>
+                                    <img src="images/icons/turkey.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:logistics_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container">
+                            <img src="images/tc/in-action/kaan-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Fourth TC -->
+                    <div class="tc-cards-container grid-reverse light-purple">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/marion.jpg">
+                            <div class="tc-info">
+                                <h3>Academics Chair</h3>
+                                <a href="https://www.linkedin.com/in/marion-anglin-301499215/">
+                                    Marion Anglin
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Kaiserslautern, Germany
+                                    </p>
+                                    <img src="images/icons/germany.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:academics_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container order-reverse">
+                            <img src="images/tc/in-action/marion-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Fifth TC-->
+                    <div class="tc-cards-container">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/shrinidhi.jpg">
+                            <div class="tc-info">
+                                <h3>Finance Chair</h3>
+                                <a href="https://www.linkedin.com/in/shrinidhi-krishnan-17232b21a/">
+                                    Shrinidhi Krishnan
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Chennai, India
+                                    </p>
+                                    <img src="images/icons/india.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:finance_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container">
+                            <img src="images/tc/in-action/shrinidhi-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- TC six-->
+                    <div class="tc-cards-container grid-reverse light-purple">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/vanessa.jpg">
+                            <div class="tc-info">
+                                <h3>Fundraising Chair</h3>
+                                <a href="https://www.linkedin.com/in/vanessa-russell-3228a9235/">
+                                    Vanessa Russell
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Grimsby, Ontario
+                                    </p>
+                                    <img src="images/icons/canada.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:fundraising_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container order-reverse">
+                            <img src="images/tc/in-action/vanessa-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Seventh TC-->
+                    <div class="tc-cards-container">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/arthur.jpg">
+                            <div class="tc-info">
+                                <h3>Sponsorship Chair</h3>
+                                <a>
+                                    Arthur Hu
+                                </a>
+                                <h5>He/Him</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Halifax, Nova Scotia
+                                    </p>
+                                    <img src="images/icons/canada.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:sponsorship_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container">
+                            <img src="images/tc/in-action/arthur-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Eighth TC-->
+                    <div class="tc-cards-container grid-reverse light-purple">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/karina.jpg">
+                            <div class="tc-info">
+                                <h3>Sponsorship Chair</h3>
+                                <a href="https://www.linkedin.com/in/karina-verma-565027187/">
+                                    Karina Verma
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Oakville, Ontario
+                                    </p>
+                                    <img src="images/icons/canada.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:sponsorship_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container order-reverse">
+                            <img src="images/tc/in-action/karina-in-owk.jpeg">
+                        </div>
+                    </div>
+                    <!-- Ninth TC-->
+                    <div class="tc-cards-container">
+                        <div class="tc-card">
+                            <!-- Change headshot per TC member-->
+                            <!-- To match the style, all headshots should have aspect ratio 4:5 (use a website to crop it)-->
+                            <img src="images/tc/anishka.jpg">
+                            <div class="tc-info">
+                                <h3>Publications Chair</h3>
+                                <a href="https://www.linkedin.com/in/anishka-barran-005529245/">
+                                    Anishka Barran
+                                </a>
+                                <h5>She/Her</h5>
+                                <div class="hometown-container">
+                                    <img src="images/icons/home.svg">
+                                    <p>
+                                        <!-- There is a way to include emojis in html but it wasn't working so I gave up-->
+                                        Ajax, Ontario
+                                    </p>
+                                    <img src="images/icons/canada.png">
+                                </div>
+                            </div>
+                            <!-- Change links as needed, I recommend not adding ones unless you want to mess with css lol-->
+                            <div class="connections-container">
+                                <a href="mailto:publications_tc@compsa.queensu.ca">
+                                    <img src="images/icons/email.svg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tc-in-owk-container">
+                            <img src="images/tc/in-action/anishka-in-owk.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="footer-container p-5">
+                <div class="layout-container">
+                    <div class="footer-content footer-links">
+                        
+                            <div class="footer-nav-links col-c-fs">
+                                <!-- Replace with applicable links -->
+                                <a target ="noreferrer" href="index.html">HOME</a>
+                                <a target="noreferrer" href="meet-your-tc.html">MEET YOUR TC</a>
+                                <a target="noreferrer" href="coming-soon.html">REGISTRATION</a>
+                                <a target="noreferrer" href="coming-soon.html">SPONSORS</a>
+                                <a target="noreferrer" href="coming-soon.html">FAQ</a>
+                            </div>
+                            <div class="footer-page-socials col-c-fs">
+                                <a href="mailto:orientation@compsa.queensu.ca">CONTACT</a>
+                                <a href="https://www.instagram.com/qcomputingorientation/">INSTAGRAM</a>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer-banner justify-content-center">
+                        <div class="author-container layout-container">
+                            <div class="author-content">
+                                <img src="images/logos/qcomputing-logo.svg" class="footer-image">
+                            </div>
+                            
+                            
+                    </div>
+            </div>
+        </div>
+    
+    </div>
+    </body>
+    </html>

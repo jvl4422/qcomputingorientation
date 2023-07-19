@@ -1,4 +1,5 @@
 $qcomp-light-purple : #BDB7E9;
+$qcomp-dark-purple: #867eeb;
 
 .flex{
   display:flex;
@@ -75,6 +76,11 @@ $qcomp-light-purple : #BDB7E9;
     top: 6.5vh;
     right: 2.5rem;
   }
+
+  // Never triggers because mobile does not have hover option
+  .nav-option:hover{
+    color:white;
+  }
 }
 
 .primary-navigation[data-visible = "true"]{
@@ -104,7 +110,6 @@ $qcomp-light-purple : #BDB7E9;
   
 }
 .nav-option:hover{
-  // Obv change colour appropriately
-  color:white;
+  color: $qcomp-dark-purple;
 }
 
