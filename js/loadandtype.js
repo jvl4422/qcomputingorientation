@@ -1,4 +1,3 @@
-console.log("I am running")
 document.addEventListener('DOMContentLoaded',function(event){
 
 var dataText = ["Coming Soon!"];
