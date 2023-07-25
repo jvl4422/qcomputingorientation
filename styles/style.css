@@ -1069,15 +1069,53 @@ body .orientation-container {
   margin-bottom: 2%;
   font-size: 1.4em;
 }
-.registration-landing h7 {
+.registration-landing h4 {
   font-family: halyard-text, sans-serif;
   font-size: 1.3em;
   font-weight: 600;
+  margin-top: 3%;
 }
 .registration-landing p {
   font-family: halyard-text, sans-serif;
   line-height: 1.3em;
   font-size: 1.2em;
+  margin-bottom: 3%;
+  margin-right: 2%;
+}
+
+.registration-questions {
+  display: block;
+}
+.registration-questions h4 {
+  font-family: halyard-text, sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+.registration-questions p {
+  font-family: halyard-text, sans-serif;
+  line-height: 1.3em;
+  font-size: 1.2em;
+  margin-bottom: 3%;
+  margin-right: 2%;
+}
+.registration-questions a {
+  text-decoration: underline;
+}
+.registration-questions a:hover {
+  color: #867eeb;
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .body {

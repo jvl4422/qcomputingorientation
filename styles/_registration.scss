@@ -41,17 +41,57 @@ $qcomp-font: halyard-text, sans-serif;
         font-size: 1.4em;
     }
 
-    h7 {
+    h4 {
         font-family: $qcomp-font;
         font-size: 1.3em;
         font-weight: 600;
+        margin-top: 3%;
     }
 
     p {
         font-family: $qcomp-font;
         line-height: 1.3em;
         font-size: 1.2em;
+        margin-bottom: 3%;
+        margin-right: 2%;
 
     }
 }
 
+.registration-questions{
+    display: block;
+    h4 {
+        font-family: $qcomp-font;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        margin-block-start: auto;
+        margin-block-end: auto;
+    }
+
+    p {
+        font-family: $qcomp-font;
+        line-height: 1.3em;
+        font-size: 1.2em;
+        margin-bottom: 3%;
+        margin-right: 2%;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover{
+        color:$qcomp-dark-purple;
+    }
+}
+
+.preview-container{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+}
+
+.flex-col{
+    flex-direction: column;
+}
