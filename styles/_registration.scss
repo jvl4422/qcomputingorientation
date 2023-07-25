@@ -11,6 +11,15 @@ $qcomp-font: halyard-text, sans-serif;
 .registration-landing{
     display: grid;
     grid-template-columns: 4fr 5fr;
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      @media only screen and (max-width: 800px) {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+      }
 
     img{
         align-self: center;
@@ -24,6 +33,14 @@ $qcomp-font: halyard-text, sans-serif;
         font-weight: bold;
         font-family: halyard-text, sans-serif;
         color: #867eeb;
+        @media only screen and (max-width: 800px) {
+            font-size: 2.8em;
+          }
+          @media only screen and (max-width: 500px) {
+            font-size: 2em;
+            margin-top: 1em;
+            
+          }
     }
 
     a:hover{
@@ -39,6 +56,9 @@ $qcomp-font: halyard-text, sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         font-size: 1.4em;
+        @media only screen and (max-width: 800px) {
+            font-size: 1.2em;
+          }
     }
 
     h4 {
@@ -46,6 +66,9 @@ $qcomp-font: halyard-text, sans-serif;
         font-size: 1.3em;
         font-weight: 600;
         margin-top: 3%;
+        @media only screen and (max-width: 800px) {
+            font-size: 1.3em;
+          }
     }
 
     p {
@@ -54,12 +77,19 @@ $qcomp-font: halyard-text, sans-serif;
         font-size: 1.2em;
         margin-bottom: 3%;
         margin-right: 2%;
+        @media only screen and (max-width: 800px) {
+            font-size: 1em;
+          }
 
     }
 }
 
 .registration-questions{
     display: block;
+    @media only screen and (max-width: 800px) {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+      }
     h4 {
         font-family: $qcomp-font;
         font-size: 1.3em;
@@ -68,6 +98,9 @@ $qcomp-font: halyard-text, sans-serif;
         margin-bottom: 3%;
         margin-block-start: auto;
         margin-block-end: auto;
+        @media only screen and (max-width: 800px) {
+            font-size: 1.1em;
+          }
     }
 
     p {
@@ -76,6 +109,9 @@ $qcomp-font: halyard-text, sans-serif;
         font-size: 1.2em;
         margin-bottom: 3%;
         margin-right: 2%;
+        @media only screen and (max-width: 800px) {
+            font-size: 1em;
+          }
     }
 
     a {
@@ -90,6 +126,10 @@ $qcomp-font: halyard-text, sans-serif;
 .preview-container{
     display: grid;
     grid-template-columns: 5fr 4fr;
+    @media only screen and (max-width: 500px) {
+        display:flex;
+        flex-direction: column;
+      }
 }
 
 .flex-col{

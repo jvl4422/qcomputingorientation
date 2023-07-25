@@ -1044,6 +1044,19 @@ body .orientation-container {
   display: grid;
   grid-template-columns: 4fr 5fr;
 }
+@media only screen and (max-width: 800px) {
+  .registration-landing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .registration-landing {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+}
 .registration-landing img {
   align-self: center;
   max-width: 100%;
@@ -1057,6 +1070,17 @@ body .orientation-container {
   font-family: halyard-text, sans-serif;
   color: #867eeb;
 }
+@media only screen and (max-width: 800px) {
+  .registration-landing .registration-header {
+    font-size: 2.8em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .registration-landing .registration-header {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}
 .registration-landing a:hover {
   color: #BDB7E9;
   text-decoration: underline;
@@ -1069,11 +1093,21 @@ body .orientation-container {
   margin-bottom: 2%;
   font-size: 1.4em;
 }
+@media only screen and (max-width: 800px) {
+  .registration-landing h6 {
+    font-size: 1.2em;
+  }
+}
 .registration-landing h4 {
   font-family: halyard-text, sans-serif;
   font-size: 1.3em;
   font-weight: 600;
   margin-top: 3%;
+}
+@media only screen and (max-width: 800px) {
+  .registration-landing h4 {
+    font-size: 1.3em;
+  }
 }
 .registration-landing p {
   font-family: halyard-text, sans-serif;
@@ -1082,9 +1116,20 @@ body .orientation-container {
   margin-bottom: 3%;
   margin-right: 2%;
 }
+@media only screen and (max-width: 800px) {
+  .registration-landing p {
+    font-size: 1em;
+  }
+}
 
 .registration-questions {
   display: block;
+}
+@media only screen and (max-width: 800px) {
+  .registration-questions {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
 }
 .registration-questions h4 {
   font-family: halyard-text, sans-serif;
@@ -1095,12 +1140,22 @@ body .orientation-container {
   margin-block-start: auto;
   margin-block-end: auto;
 }
+@media only screen and (max-width: 800px) {
+  .registration-questions h4 {
+    font-size: 1.1em;
+  }
+}
 .registration-questions p {
   font-family: halyard-text, sans-serif;
   line-height: 1.3em;
   font-size: 1.2em;
   margin-bottom: 3%;
   margin-right: 2%;
+}
+@media only screen and (max-width: 800px) {
+  .registration-questions p {
+    font-size: 1em;
+  }
 }
 .registration-questions a {
   text-decoration: underline;
@@ -1112,6 +1167,12 @@ body .orientation-container {
 .preview-container {
   display: grid;
   grid-template-columns: 5fr 4fr;
+}
+@media only screen and (max-width: 500px) {
+  .preview-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .flex-col {
