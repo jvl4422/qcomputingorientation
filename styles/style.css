@@ -1003,6 +1003,39 @@ body .orientation-container {
   text-align: center;
 }
 
+.accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  border: none;
+  font-size: 1.8em;
+}
+
+.open, .accordion:hover {
+  background-color: #BEB7ED;
+}
+
+.panel {
+  padding: 2%;
+  display: none;
+  background-color: #eee;
+  color: rgb(57, 54, 54);
+  overflow: hidden;
+  display: none;
+  justify-content: center;
+  transition: max-height 0.4s ease;
+}
+.panel p {
+  font-size: 1.2em;
+  font-family: halyard-text, sans-serif;
+  text-align: center;
+  justify-self: center;
+  width: 75%;
+}
+
 .body {
   font-family: halyard-text, sans-serif;
 }

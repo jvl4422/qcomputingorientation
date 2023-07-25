@@ -1,0 +1,45 @@
+// faq page
+$qcomp-light-purple: #BEB7ED;
+
+.faq-page{
+
+}
+
+.questions{
+
+}
+
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    border: none;
+    //outline: $qcomp-light-purple;
+    font-size: 1.8em;
+  }
+  
+  .open, .accordion:hover {
+    background-color: $qcomp-light-purple; 
+  }
+  
+  // I want a smoother transition
+  .panel {
+    padding: 2%;
+    display: none;
+    background-color: #eee;
+    color: rgb(57, 54, 54);
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    transition: max-height 0.4s ease;
+    p {
+        font-size: 1.2em;
+        font-family: halyard-text, sans-serif;
+        text-align: center;
+        justify-self: center;
+        width: 75%;
+    }
+  }
