@@ -1159,6 +1159,7 @@ body .orientation-container {
 }
 .registration-questions a {
   text-decoration: underline;
+  color: #867eeb;
 }
 .registration-questions a:hover {
   color: #867eeb;
