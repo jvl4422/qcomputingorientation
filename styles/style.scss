@@ -1,6 +1,5 @@
 // style.scss
-// Everything will get added here with an import tag
-// This is the main one
+// New scss files will require an @use tag here to be compilied into the css file
 
 $halyard-font : "halyard-text", sans-serif;
 @use "_nav.scss";
@@ -15,6 +14,7 @@ $halyard-font : "halyard-text", sans-serif;
 @use "_footer.scss";
 @use "_faq.scss";
 @use "_registration.scss";
+@use "_handbook.scss";
 
 $qcomp-dark-purple : #867eeb;
 $qcomp-light-purple: #BDB7E9;
